@@ -34,7 +34,7 @@ st.markdown("Machine Learning based fraud detection using transactional data")
 # --------------------------------------------------
 @st.cache_data
 def load_data():
-    return pd.read_csv("data/onlinefraud.csv")
+    return pd.read_csv("D:\Fraud Detection/Credit_Card_Applications.csv")
 
 df = load_data()
 
@@ -208,3 +208,4 @@ elif menu == "Fraud Prediction":
             st.error("🚨 Fraudulent Transaction Detected")
         else:
             st.success("✅ Transaction is Legitimate")
+
